@@ -30,8 +30,8 @@ function draw() {
 
     if(cat.x-mouse.x<(cat.width-mouse.width)/2){
         cat.velocityX=0
-        cat.addAnimation("catLastImage",cat3Image)
-        cat.changeAnimation("catLastImage")
+        cat.changeAnimation("catLastImage",cat3Image)
+    
     }
     drawSprites();
 }
@@ -40,7 +40,7 @@ function draw() {
 function keyPressed(){
     if(keyCode===LEFT_ARROW){
         cat.velocityX=-5;
-        cat.addAnimation("catRunning",cat2Image)
-        cat.changeAnimation("catRunnning")
+        cat.changeAnimation("catRunning",cat2Image)
+      
     }
 }
